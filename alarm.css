@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Background with Overlay */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('alarm-clock.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);  /* Dark transparent layer over background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Clock Container */
+.clock-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.current-time {
+    font-size: 3rem;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Alarm List Container */
+.alarms-container {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+}
+
+.alarm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.delete-alarm {
+    background-color: #ff3f34;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
